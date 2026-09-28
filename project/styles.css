@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/*Navigation Bar*/
+
+header{
+    background-color:#0b3d91;
+    color:white;
+    padding:20px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap: 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/*hero Section*/
+
+.hero{
+    height: 800px;
+    background-image: url("img/school-building\ .jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    color:white;
+}
+
+.hero-content{
+    background-color:rgba(0,0,0,0.01);
+    padding: 40px;
+    border-radius: 10px;
+}
+.hero-content h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/*buttons*/
+
+.btn{
+    display:inline-block;
+    background-color:#0b3d91;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #1558c0;
+    position: relative;
+    top: -2px;
+}
+
+
+/*About preview*/
+
+.about-preview{
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+.about-preview > div{
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.about-preview h2{
+    color: #0b3d91;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.about-preview h3{
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.about-preview p{
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+
+/*Highlights*/
+
+.highlights{
+    padding: 60px 8%;
+    text-align: center;
+}
+.highlights h2{
+    color: #0b3d91;
+    margin-bottom: 30px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card h3{
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
+
+.card:hover{
+    position: relative;
+    top: -4px;
+}
+
+/*learning section*/
+.learning {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 10%;
+    background-color: white;
+}
+
+.learning-img,
+.learning-text{
+    flex: 1;
+}
+
+.learning-img img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.learning-text h2{
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.learning-text p{
+    margin-bottom: 15px;
+}
+
+.learning-img img:hover{
+    position: relative;
+    top: -6px;
+}
+
+
+/*Teacher section*/
+
+.teachers{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 10%;
+    background-color: #f5f7fa;
+}
+
+.teachers-text,
+.teachers-img{
+    flex: 1;
+}
+
+.teachers-img img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.teachers-text h2{
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.teachers-text p{
+    margin-bottom: 15px;
+}
+.teachers-img img:hover{
+    position: relative;
+    top: -6px;
+}
+
+
+/*sports section*/
+
+.sports{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 10%;
+    background-color: white;
+}
+
+.sports-text,
+.sports-img{
+    flex: 1;
+}
+
+.sports-img img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sports-text h2{
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.sports-text p{
+    margin-bottom: 15px;
+}
+
+.sports-img img:hover{
+    position: relative;
+    top: -6px;
+}
+
+
+
+
+/*About page*/
+
+.about-page{
+    padding: 60px 10%;
+    background-color: white;
+}
+.about-page h2{
+    color: #0b3d91;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.about-page p{
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+.about-page ul{
+    margin-left: 25px;
+}
+
+
+/*contact page*/
+
+.contact-page{
+    padding: 60px 10%;
+    background-color: white;
+}
+.contact-page h2{
+    color: #0b3d91;
+    margin-bottom: 3px;
+}
+.contact-info{
+    margin: 30px 0;
+}
+.contact-info h3{
+    color: #0b3d91;
+    margin-top: 15px;
+}
+
+
+/*contact forms*/
+
+form{
+    max-width: 600px;
+}
+form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+form button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #082d6b;
+}
+
+/*footer*/
+
+footer{
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
